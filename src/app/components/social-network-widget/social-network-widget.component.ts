@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { Hotel } from '../../interfaces/index';
 import { get } from 'lodash';
-import { placeholderUrl } from '../../../shared/global-constants';
+import { placeholderUrl } from '../../shared/global-constants';
 @Component({
   selector: 'app-social-network-widget',
   templateUrl: './social-network-widget.component.html',

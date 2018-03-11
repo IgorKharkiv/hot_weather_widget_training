@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnChanges} from '@angular/core';
 import { Hotel } from '../../interfaces/index';
-import { placeholderUrl } from '../../../shared/global-constants';
+import { placeholderUrl } from '../../shared/global-constants';
 import { get } from 'lodash';
 @Component({
   selector: 'app-main-photo',
