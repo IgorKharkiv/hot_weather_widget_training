@@ -1,24 +1,23 @@
 <div class="village">
-  <h3>Righteous indignation & like</h3>
+  <h3>{{title}}</h3>
   <span class="line"> </span>
   <div class="activity_box">
     <div class="scrollbar" id="style-2">
 
-      <div class="activity-row">
+      <div *ngFor="let hotel of hotels" class="activity-row">
         <div class="activity-desc">
-          <h5>Resort Address</h5>
-          <p>Sed perspiciatis</p>
-          <p>Et harum quidem</p>
-          <h6>Tel:+1285 968 685</h6>
+          <h5>{{hotel.name}}</h5>
+          <h4>{{hotel.address}}</h4>
+          <p>{{hotel.description}}</p>
+          <h6>{{hotel.phone}}</h6>
         </div>
         <div class="activity-img">
           <ul>
-            <li>
-              <img src='../assets/images/res.jpg' alt="" />
+
+            <li *ngFor="let image of hotel.images">
+              <img [src]="image" alt="" />
             </li>
-            <li>
-              <img src='../assets/images/r1.jpg' alt="" />
-            </li>
+
           </ul>
         </div>
         <div class="clear"> </div>

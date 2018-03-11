@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { Hotel } from '../../interfaces/';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+  @Input()
+  public hotels: Hotel[] = [];
+  public title = 'Available Hotels:';
   constructor() { }
 
   ngOnInit() {

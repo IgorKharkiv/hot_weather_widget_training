@@ -1,11 +1,11 @@
 
-<h1>Hot Weather Widget</h1>
+<h1>{{title}}</h1>
 
 <div class="element">
     <div class="element-left">
 
       <!-- app app main photo component -->
-      <app-main-photo></app-main-photo>
+      <app-main-photo [hotel]="activeHotel"></app-main-photo>
 
       <div class="element-left-bottom">
           
@@ -13,7 +13,7 @@
           <app-filter></app-filter>
 
           <!-- app card component -->
-          <app-card></app-card>
+          <app-card [hotels]="hotels"></app-card>
           
       </div>
 
@@ -22,10 +22,10 @@
     <div class="element-right">
       
       <!-- app card component -->
-      <app-weather></app-weather>
+      <app-weather [hotel]="activeHotel"></app-weather>
 
       <!-- app social network widget component -->
-      <app-social-network-widget></app-social-network-widget>
+      <app-social-network-widget [hotel]="activeHotel"></app-social-network-widget>
 
     </div>
 
@@ -33,5 +33,5 @@
 </div>
 
 <div class="copy-right">
-  <p>© 2015 Hot Weather Widget. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
+  <p>{{copyrightMsg}}  <a href="{{copyrightLink}}" target="_blank">  {{copyrightName}} </a></p>
 </div>
