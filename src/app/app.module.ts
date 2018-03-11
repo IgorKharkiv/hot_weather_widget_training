@@ -9,6 +9,7 @@ import { WeatherComponent } from './components/weather/weather.component';
 import { SocialNetworkWidgetComponent } from './components/social-network-widget/social-network-widget.component';
 import { MainPhotoComponent } from './components/main-photo/main-photo.component';
 
+import { CapitalizePipe } from './shared/pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MainPhotoComponent } from './components/main-photo/main-photo.component
     FilterComponent,
     WeatherComponent,
     SocialNetworkWidgetComponent,
-    MainPhotoComponent
+    MainPhotoComponent,
+    CapitalizePipe,
   ],
   imports: [
     BrowserModule

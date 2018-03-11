@@ -10,10 +10,16 @@
       <div class="element-left-bottom">
           
           <!-- app filter component -->
-          <app-filter></app-filter>
+          <app-filter
+            [hotels]="hotels"
+            (hotelsFilteredEvent)="hotelsChanged($event)"
+          ></app-filter>
 
           <!-- app card component -->
-          <app-card [hotels]="hotels"></app-card>
+          <app-card 
+            [hotels]="hotels"
+            (hotelChangeEvent)="hotelChange($event)"
+          ></app-card>
           
       </div>
 

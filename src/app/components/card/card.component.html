@@ -6,17 +6,17 @@
 
       <div *ngFor="let hotel of hotels" class="activity-row">
         <div class="activity-desc">
-          <h5>{{hotel.name}}</h5>
-          <h4>{{hotel.address}}</h4>
-          <p>{{hotel.description}}</p>
+          <div class="pseudo-link" (click)="setActiveHotel(hotel.id)">
+            <h5>{{hotel.name}}</h5>
+            <h4>{{hotel.address}}</h4>
+            <p>{{hotel.description}}</p>
+          </div>
           <h6>{{hotel.phone}}</h6>
         </div>
         <div class="activity-img">
           <ul>
 
-            <li *ngFor="let image of hotel.images">
-              <img [src]="image" alt="" />
-            </li>
+            <li *ngFor="let image of hotel.images" [style.backgroundImage]="'url('+ image +')'"></li>
 
           </ul>
         </div>

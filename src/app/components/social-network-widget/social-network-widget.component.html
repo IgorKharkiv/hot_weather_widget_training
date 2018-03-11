@@ -2,7 +2,7 @@
   <div class="teddy-text">
     <h4>{{title}}</h4>
     <span class="w-line"> </span>
-    <img [src]="photoUrl" alt=""  class="img-responsive">
+    <div class="img img-responsive" [style.backgroundImage]="'url('+ photoUrl +')'"></div>
   </div>
   <div class="teddy-follow">
     <ul>

@@ -1,0 +1,40 @@
+
+h4{
+  font-size: 15px;
+  margin-bottom: 0.5em;
+}
+
+.activity-desc h5{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.activity-img li{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.activity-row{
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 1em;
+}
+
+.activity-row:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.activity-desc p{
+  line-height: normal;
+}
+
+.pseudo-link{
+  cursor: pointer;
+}
+
+.pseudo-link:hover{
+  opacity: 0.8;
+}

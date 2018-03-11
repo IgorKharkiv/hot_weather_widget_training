@@ -22,4 +22,12 @@ export class AppComponent implements OnInit {
     });
   }
 
+  public hotelChange(event): void {
+    this.activeHotel = event;
+  }
+
+  public hotelsChanged(event): void {
+    this.hotels = event;
+    this.activeHotel = event[0];
+  }
 }
