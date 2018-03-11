@@ -3,7 +3,7 @@
     <li 
       *ngFor="let filter of filters"
       [ngClass]="{'active': filter === currentFilter}"
-    ><a href="#" (click)="filterHotels(filter)">{{filter | capitalize}}</a></li>
-    <li class="anc-bor" (click)="showAllHotels()"><a href="#">All</a></li>
+    ><span (click)="filterHotels(filter)">{{filter | capitalize}}</span></li>
+    <li class="anc-bor" (click)="showAllHotels()"><span>All</span></li>
   </ul>
 </div>

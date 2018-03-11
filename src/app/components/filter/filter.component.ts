@@ -23,6 +23,7 @@ export class FilterComponent implements OnInit {
   }
 
   public filterHotels(tag: string) {
+    if (!this.hotels.length) { return; }
     this.currentFilter = tag;
     if (!this.clonedHotels) {
       this.clonedHotels = [...this.hotels];

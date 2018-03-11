@@ -1,3 +1,7 @@
-.active a{
+.ele-strip span{
+  color: #fff;
+  cursor: pointer;
+}
+.active span{
   text-decoration: underline;
 }
